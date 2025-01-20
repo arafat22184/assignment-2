@@ -146,6 +146,7 @@
   font-size: 1.25rem;
   color: var(--primary-colour);
   margin: 24px 0px;
+  max-width: 640px;
 }
 
 .banner-btn {
@@ -187,7 +188,7 @@
 
 .curriculum-left {
   padding: 52px 40px;
-  background: linear-gradient(#def5ff, var(--btn-color));
+  background: linear-gradient(#def5ff 0%, var(--btn-color) 40%);
   border: 1px solid #def5ff;
   border-radius: 18.86px;
   text-align: center;
@@ -195,7 +196,7 @@
 
 .curriculum-middle {
   padding: 52px 40px;
-  background: linear-gradient(#fff4dc, var(--btn-color));
+  background: linear-gradient(#fff4dc 0%, var(--btn-color) 40%);
   border: 1px solid #fff4dc;
   border-radius: 18.86px;
   text-align: center;
@@ -203,7 +204,7 @@
 
 .curriculum-right {
   padding: 52px 40px;
-  background: linear-gradient(#f2e8ff, var(--btn-color));
+  background: linear-gradient(#f2e8ff 0%, var(--btn-color) 40%);
   border: 1px solid #f2e8ff;
   border-radius: 18.86px;
   text-align: center;
@@ -385,7 +386,7 @@
 /* FOOT STYLES */
 
 .foot {
-  background-color: skyblue;
+  background: url(assets/bg.png), #01acfd;
   padding-top: 123px;
   padding-bottom: 174px;
 }
@@ -404,6 +405,9 @@
 .foot-logo-cont {
   width: 82px;
   height: 81px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .foot-logo-cont > img {
@@ -447,6 +451,12 @@
 .foot-socialmedia-title {
   font-size: 1.625rem;
   font-weight: 700;
+  color: var(--btn-color);
+  margin-bottom: 32px;
+}
+
+.foot-icons > a {
+  margin-right: 10px;
 }
 
 /* RESPONSIVE FOR MOBILE */
@@ -487,6 +497,7 @@
 
   .banner-btn {
     font-size: 1rem;
+    padding: 6px 24px;
   }
 
   /* CURRICULUM STYLES */
@@ -577,11 +588,46 @@
   .stories-btn-cont {
     padding-top: 20px;
     padding-bottom: 40px;
+    margin-top: 0px;
   }
 
-  .stories-btn-cont {
-    padding: 10px 60px;
+  .stories-btn {
+    padding: 10px 37px;
     font-size: 1rem;
-    margin-top: 0px;
+  }
+
+  /* FOOT STYLES */
+
+  .foot {
+    padding: 65px 16px 60px 16px;
+  }
+
+  .foot-cont {
+    flex-direction: column;
+  }
+
+  .foot-logo-title-cont {
+    margin-bottom: 22px;
+  }
+
+  .foot-title {
+    font-size: 2.233125rem;
+  }
+
+  .foot-descr {
+    margin-bottom: 32px;
+    font-size: 1rem;
+  }
+
+  .foot-about-title {
+    font-size: 1.271875rem;
+  }
+
+  .foot-about-list > li > a {
+    font-size: 1.06rem;
+  }
+
+  .foot-socialmedia-title {
+    font-size: 1.3775rem;
   }
 }
