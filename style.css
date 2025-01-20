@@ -304,6 +304,12 @@
   left: 170px;
 }
 
+.storie-descr {
+  font-size: 0.95875rem;
+  font-weight: 500;
+  color: var(--curriculum-descr);
+}
+
 .storie-big-title {
   margin-top: 58px;
   margin-bottom: 47px;
@@ -361,6 +367,11 @@
   text-align: left;
 }
 
+.stories-btn-cont {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
 .stories-btn {
   padding: 10px 61px;
   background-color: var(--primary-colour);
@@ -369,7 +380,73 @@
   border-radius: 12px;
   font-size: 1.25rem;
   font-weight: 700;
-  margin-top: 80px;
+}
+
+/* FOOT STYLES */
+
+.foot {
+  background-color: skyblue;
+  padding-top: 123px;
+  padding-bottom: 174px;
+}
+
+.foot-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-logo-title-cont {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.foot-logo-cont {
+  width: 82px;
+  height: 81px;
+}
+
+.foot-logo-cont > img {
+  width: 100%;
+}
+
+.foot-title {
+  font-size: 2.63375rem;
+  font-weight: 700;
+  color: var(--btn-color);
+}
+
+.foot-descr {
+  font-size: 1.25rem;
+  color: var(--btn-color);
+  margin-top: 35px;
+}
+
+.foot-about-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--btn-color);
+  margin-bottom: 32px;
+}
+
+.foot-about-list {
+  list-style: none;
+}
+
+.foot-about-list > li {
+  margin-bottom: 20px;
+}
+
+.foot-about-list > li > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--btn-color);
+}
+
+.foot-socialmedia-title {
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 /* RESPONSIVE FOR MOBILE */
@@ -498,9 +575,13 @@
   }
 
   .stories-btn-cont {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .stories-btn-cont {
     padding: 10px 60px;
     font-size: 1rem;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 0px;
   }
 }
