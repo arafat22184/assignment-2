@@ -1,3 +1,5 @@
+/* FONT STYLES MUST CHANGED */
+
 /* ADDED FONT QUICKSAND & RALEWAY */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -23,8 +25,8 @@
   padding: 0;
 }
 
-.container-padding {
-  padding: 0 140px;
+.container-maxwidth {
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -41,7 +43,7 @@
 
 /* HEADER STYLES */
 
-.header {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -256,6 +258,122 @@
 
 /* STORIES STYLES */
 
+.stories {
+  background: url(assets/bg.png),
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(254, 163, 1, 0.3));
+  margin-top: 60px;
+  text-align: center;
+}
+
+.stories-title {
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.stories-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 18.73px;
+}
+
+.storie-big {
+  max-width: 540px;
+  background-color: var(--btn-color);
+  border-radius: 16px;
+  position: relative;
+  text-align: left;
+}
+
+.storie-big-details {
+  padding-left: 38px;
+  padding-bottom: 35px;
+}
+
+.storie-big-btn {
+  padding: 15px 18px;
+  border: none;
+  border-radius: 48px;
+  background-color: var(--btn-nav);
+  color: var(--btn-color);
+  font-size: 0.95875rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 260px;
+  left: 170px;
+}
+
+.storie-big-title {
+  margin-top: 58px;
+  margin-bottom: 47px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.small-stories-cont {
+  max-width: 601px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 19px;
+}
+
+.storie-small {
+  border-radius: 16px;
+  background-color: var(--btn-color);
+  position: relative;
+}
+
+.storie-small-hide {
+  display: none;
+  border-radius: 16px;
+  background-color: var(--btn-color);
+  position: relative;
+}
+
+.stories-container img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.storie-small-btn {
+  padding: 10px 19px;
+  border: none;
+  border-radius: 48px;
+  background-color: var(--stories-btn);
+  color: var(--btn-color);
+  font-size: 0.95875rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 100px;
+  left: 45px;
+}
+
+.storie-small-btn-other {
+  background-color: var(--lastNav);
+}
+
+.storie-small-title {
+  padding: 43px 54px 33px 37px;
+  font-size: 0.95875rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.stories-btn {
+  padding: 10px 61px;
+  background-color: var(--primary-colour);
+  color: var(--btn-color);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 80px;
+}
+
+/* RESPONSIVE FOR MOBILE */
+
 @media screen and (max-width: 576px) {
   /* HEADER NAVBAR */
 
@@ -265,7 +383,7 @@
     margin-top: 0;
   }
 
-  .navbar,
+  .navbar-container,
   .logo-title,
   .nav-btn {
     display: none;
@@ -330,5 +448,59 @@
 
   .curriculums-btn-cont {
     display: none;
+  }
+
+  /* STORIES STYLES */
+
+  .stories {
+    padding: 0 16px;
+  }
+
+  .stories-title {
+    font-size: 1.625rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .stories-container {
+    justify-content: center;
+  }
+
+  .storie-small-hide {
+    display: block;
+  }
+
+  .storie-big {
+    display: none;
+  }
+
+  .storie-small,
+  .storie-small-hide {
+    width: 173px;
+  }
+
+  .small-stories-cont {
+    grid-template-rows: repeat(3, 1fr);
+    gap: 11px;
+    justify-content: center;
+  }
+
+  .storie-small-btn {
+    padding: 5px 11px;
+    font-size: 0.570625rem;
+    bottom: 59px;
+    left: 30px;
+  }
+
+  .storie-small-title {
+    padding: 23px 23px 17px 22px;
+    font-size: 0.570625rem;
+  }
+
+  .stories-btn-cont {
+    padding: 10px 60px;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
