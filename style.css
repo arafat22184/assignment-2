@@ -163,6 +163,10 @@
 
 /* CURRICULUM STYLES */
 
+.curriculums-container {
+  background-image: url(assets/bg.png);
+}
+
 .curriculums-title {
   font-size: 2.875rem;
   text-align: center;
@@ -237,6 +241,21 @@
   font-weight: 700;
 }
 
+.curriculums-btn-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.curriculums-btn {
+  color: var(--secondary-color);
+  font-size: 60px;
+}
+
+/* STORIES STYLES */
+
 @media screen and (max-width: 576px) {
   /* HEADER NAVBAR */
 
@@ -307,5 +326,9 @@
 
   .curriculum-btn {
     font-size: 0.63875rem;
+  }
+
+  .curriculums-btn-cont {
+    display: none;
   }
 }
