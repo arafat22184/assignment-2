@@ -1,0 +1,311 @@
+/* ADDED FONT QUICKSAND & RALEWAY */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+  font-family: 'Quicksand', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-font {
+  font-family: 'Raleway', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SHARED STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-padding {
+  padding: 0 140px;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-colour: #000;
+  --secondary-color: #fea301;
+  --foot-bg: #01acfd;
+  --btn-nav: #05d4df;
+  --lastNav: #5d58ef;
+  --btn-color: #fff;
+  --stories-btn: #95b226;
+  --curriculum-descr: #808080;
+}
+
+/* HEADER STYLES */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+/* LOGO STYLES */
+
+.logo-cont {
+  display: flex;
+  align-items: center;
+}
+
+.logo-cont > img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-colour);
+}
+
+/* NAVBAR STYLES */
+
+.navbar-container {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-1 {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.nav-2 {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--foot-bg);
+}
+
+.nav-3 {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--btn-nav);
+}
+
+.nav-4 {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--lastNav);
+}
+
+.nav-btn {
+  padding: 10px 60px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 12px;
+  color: var(--btn-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.navbarmobile {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+/* BANNER STYLES */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-colour);
+}
+
+#empow {
+  color: var(--secondary-color);
+}
+
+#vision {
+  color: var(--foot-bg);
+}
+
+.banner-descr {
+  font-size: 1.25rem;
+  color: var(--primary-colour);
+  margin: 24px 0px;
+}
+
+.banner-btn {
+  padding: 10px 47px;
+  background-color: var(--primary-colour);
+  color: var(--btn-color);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.banner-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* CURRICULUM STYLES */
+
+.curriculums-title {
+  font-size: 2.875rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.curriculums {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curriculum {
+  box-shadow: 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum-left {
+  padding: 52px 40px;
+  background: linear-gradient(#def5ff, var(--btn-color));
+  border: 1px solid #def5ff;
+  border-radius: 18.86px;
+  text-align: center;
+}
+
+.curriculum-middle {
+  padding: 52px 40px;
+  background: linear-gradient(#fff4dc, var(--btn-color));
+  border: 1px solid #fff4dc;
+  border-radius: 18.86px;
+  text-align: center;
+}
+
+.curriculum-right {
+  padding: 52px 40px;
+  background: linear-gradient(#f2e8ff, var(--btn-color));
+  border: 1px solid #f2e8ff;
+  border-radius: 18.86px;
+  text-align: center;
+}
+
+.curriculum-title {
+  font-size: 1.5325rem;
+  font-weight: 700;
+  color: var(--primary-colour);
+}
+
+.curriculum-descr {
+  font-size: 0.943125rem;
+  font-weight: 500;
+  margin: 34px 0px;
+  color: var(--curriculum-descr);
+}
+
+.curriculum-left-btn {
+  text-decoration: none;
+  color: #64c8ff;
+  font-size: 0.943125rem;
+  font-weight: 700;
+}
+
+.curriculum-middle-btn {
+  text-decoration: none;
+  color: #f0aa00;
+  font-size: 0.943125rem;
+  font-weight: 700;
+}
+
+.curriculum-right-btn {
+  text-decoration: none;
+  color: #8700ff;
+  font-size: 0.943125rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  /* HEADER NAVBAR */
+
+  .header {
+    padding: 16px;
+    border: 1px solid var(--secondary-color);
+    margin-top: 0;
+  }
+
+  .navbar,
+  .logo-title,
+  .nav-btn {
+    display: none;
+  }
+  .navbarmobile {
+    display: inline;
+  }
+
+  /* BANNER STYLES */
+
+  .banner {
+    padding: 0px 16px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-descr {
+    font-size: 0.875rem;
+  }
+
+  .banner-btn {
+    font-size: 1rem;
+  }
+
+  /* CURRICULUM STYLES */
+
+  .curriculums-container {
+    padding: 0px 16px;
+  }
+
+  .curriculums-title {
+    font-size: 1.625rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .curriculums {
+    flex-direction: column;
+    gap: 12.3px;
+  }
+
+  .curriculum {
+    box-shadow: 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
+  }
+
+  .curriculum-title {
+    font-size: 1.0375rem;
+  }
+
+  .curriculum-descr {
+    font-size: 0.63875rem;
+    margin: 22px 0px;
+  }
+
+  .curriculum-btn {
+    font-size: 0.63875rem;
+  }
+}
