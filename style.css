@@ -58,9 +58,10 @@
 .logo-cont {
   display: flex;
   align-items: center;
+  gap: 11px;
 }
 
-.logo-cont > img {
+.logo-cont > a > img {
   width: 100%;
   height: 100%;
 }
@@ -148,8 +149,6 @@
 
 .navbarmobile {
   display: none;
-  width: 30px;
-  height: 30px;
 }
 
 /* MARQUEE STYLES */
@@ -360,7 +359,8 @@
 }
 
 .storie-big {
-  max-width: 540px;
+  width: 540px;
+  height: 621px;
   background-color: var(--btn-color);
   border-radius: 16px;
   position: relative;
@@ -416,6 +416,8 @@
   border-radius: 16px;
   background-color: var(--btn-color);
   position: relative;
+  width: 291px;
+  height: 301px;
 }
 
 .storie-small-hide {
@@ -588,9 +590,9 @@
   /* HEADER NAVBAR */
 
   .header {
-    padding: 16px;
     border: 1px solid var(--secondary-color);
-    margin-top: 0;
+    margin: 0px 0px;
+    padding: 0px 16px;
   }
 
   .navbar-container,
@@ -598,8 +600,26 @@
   .nav-btn {
     display: none;
   }
+
+  .logo-cont {
+    width: 46px;
+    height: 46px;
+  }
+
+  .logo-cont > a > img {
+    width: 46px;
+  }
+
   .navbarmobile {
-    display: inline;
+    display: block;
+    font-size: 30px;
+  }
+
+  /* MARQUEE STYLES */
+
+  .marquee {
+    border-radius: 0px;
+    margin-top: 10px;
   }
 
   /* BANNER STYLES */
@@ -638,10 +658,6 @@
   .curriculums {
     flex-direction: column;
     gap: 12.3px;
-  }
-
-  .curriculum {
-    box-shadow: 0px 0px 19.16px 0.64px rgba(0, 0, 0, 0.05);
   }
 
   .curriculum-title {
@@ -688,6 +704,7 @@
   .storie-small,
   .storie-small-hide {
     width: 173px;
+    height: 174.78px;
   }
 
   .small-stories-cont {
