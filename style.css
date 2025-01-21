@@ -152,6 +152,19 @@
   height: 30px;
 }
 
+/* MARQUEE STYLES */
+
+.marquee {
+  height: 30px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
 /* BANNER STYLES */
 
 .banner {
