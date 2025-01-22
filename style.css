@@ -420,6 +420,8 @@
   height: 301px;
 }
 
+/* 2 Storie hide in Desktop View */
+
 .storie-small-hide {
   display: none;
   border-radius: 16px;
@@ -579,7 +581,7 @@
 .copyright {
   color: var(--btn-color);
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1160px;
   text-align: center;
   margin-top: 150px;
 }
